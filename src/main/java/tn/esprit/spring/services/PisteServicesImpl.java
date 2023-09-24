@@ -22,7 +22,7 @@ public class PisteServicesImpl implements  IPisteServices{
     public List<Piste> retrieveAllPistes() {
         return pisteRepository.findAll();
     }
-
+//new change now
     @Override
     public Piste addPiste(Piste piste) {
         return pisteRepository.save(piste);
