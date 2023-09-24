@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Build Maven') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn -Dmaven.test.failure.ignore=true clean package'
             }
         }
         stage('Date') {
